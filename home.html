@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <audio id="bgmusic" src="sounds/0.mp3" preload="auto"></audio>
+  
+
+  <style>
+
+        body {
+          background-color: beige;
+            background-size: cover;
+            text-align: center;
+          
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+    .poster-h {
+      font-family: 'Raleway', Arial, sans-serif;
+      position: relative;
+      margin: 10px;
+      min-width: 310px -60px;
+      max-width: 310px;
+      width: 100%;
+      color: #ffffff;
+      text-align: left;
+      background-color: #000000;
+      font-size: 16px;
+    }
+    .poster-h * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.4s ease-in;
+      transition: all 0.4s ease-in;
+    }
+    .poster-h img {
+      position: relative;
+      max-width: 100%;
+      vertical-align: top;
+    }
+    .poster-h figcaption {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      padding: 20px 30px;
+    }
+    .poster-h figcaption:before,
+    .poster-h figcaption:after {
+      width: 1px;
+      height: 0;
+    }
+    .poster-h figcaption:before {
+      right: 0;
+      top: 0;
+    }
+    .poster-h figcaption:after {
+      left: 0;
+      bottom: 0;
+    }
+    .poster-h h3,
+    .poster-h p {
+      line-height: 1.5em;
+    }
+    .poster-h h3 {
+      margin: 0 0 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .poster-h p {
+      font-size: 0.8em;
+      font-weight: 500;
+      margin: 0 0 15px;
+    }
+    .poster-h a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .poster-h:before,
+    .poster-h:after,
+    .poster-h figcaption:before,
+    .poster-h figcaption:after {
+      position: absolute;
+      content: '';
+      background-color: #ffffff;
+      z-index: 1;
+      -webkit-transition: all 0.4s ease-in;
+      transition: all 0.4s ease-in;
+      opacity: 0.8;
+    }
+    .poster-h:before,
+    .poster-h:after {
+      height: 1px;
+      width: 0%;
+    }
+    .poster-h:before {
+      top: 0;
+      left: 0;
+    }
+    .poster-h:after {
+      bottom: 0;
+      right: 0;
+    }
+    .poster-h:hover img,
+    .poster-h.hover img {
+      opacity: 0.4;
+    }
+    .poster-h:hover figcaption,
+    .poster-h.hover figcaption {
+      opacity: 1;
+    }
+    .poster-h:hover figcaption:before,
+    .poster-h.hover figcaption:before,
+    .poster-h:hover figcaption:after,
+    .poster-h.hover figcaption:after {
+      height: 100%;
+    }
+    .poster-h:hover:before,
+    .poster-h.hover:before,
+    .poster-h:hover:after,
+    .poster-h.hover:after {
+      width: 100%;
+    }
+    .poster-h:hover:before,
+    .poster-h.hover:before,
+    .poster-h:hover:after,
+    .poster-h.hover:after,
+    .poster-h:hover figcaption:before,
+    .poster-h.hover figcaption:before,
+    .poster-h:hover figcaption:after,
+    .poster-h.hover figcaption:after {
+      opacity: 0.1;
+
+      </style>
+<style>
+      @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Codystar';
+   background: black;
+   background-color: blac;
+   
+}
+
+.neons {
+   margin-top: 5rem;
+   margin-left: 20rem;
+   text-align: center;
+}
+
+.neons h1 {
+  font-size: 9rem;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 90px red;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red, 0 1 90px red;
+  }
+}
+</style>
+
+<script> 
+  function play(){
+    var audio = document.getElementById("audio");
+    audio.play();
+  }</script>
+
+
+    <title>Travel Gallery</title>
+</head>
+<body onmousemove="ambient()">
+  
+  <div class="container">
+   
+    <div class="row">
+      <div class="neons col-12">
+         <h1><em>Travel Gallery</em></h1>
+      </div>
+   </div>
+   <figure class="poster-h">
+    <img src="poster/0.jpeg" alt="Seoul"/>
+    <figcaption>
+      <h3>Seoul</h3>
+      <p>Photo by Hongseo Ahn</p> 
+      <p>09.02.2017 in Seoul</p>
+    </figcaption>
+    <a href="seoul.html"></a>
+  </figure> 
+   
+  <figure class="poster-h">
+    <img src="poster/4.jpeg" alt="Pohang"/>
+    <figcaption>
+      <h3>Pohang</h3>
+      <p>Photo by Hongseo Ahn</p> 
+      <p>08.24.2017 in Pohang</p>
+    </figcaption>
+    <a href="pohang.html"></a>
+  </figure>
+
+  <figure class="poster-h">
+    <img src="poster/15.jpeg" alt="Jeju"/>
+    <figcaption>
+      <h3>Jeju</h3>
+      <p>Photo by Hongseo Ahn</p> 
+      <p>08.18.2018 in Jeju</p></figcaption>
+    <a href="jeju.html"></a>
+  </figure>
+  
+
+<figure class="poster-h">
+  <img src="poster/22.jpeg" alt="Gangneung"/>
+  <figcaption>
+    <h3>Gangneung</h3>
+    <p>Photo by Hongseo Ahn</p> 
+    <p>07.16.2020 in Gangneung</p></figcaption>
+  <a href="gangneung.html"></a>
+</figure>
+<figure class="poster-h">
+  <img src="poster/5.jpeg" alt="Cambodia"/>
+  <figcaption>
+    <h3>Cambodia</h3>
+    <p>Photo by Hongseo Ahn</p> 
+    <p>09.10.2017 in Cambodia</p>
+  </figcaption>
+  <a href="cambodia.html"></a>
+</figure>
+
+<figure class="poster-h">
+  <img src="poster/18.jpeg" alt="Monterey"/>
+  <figcaption>
+    <h3>Monterey</h3>
+    <p>Photo by Hongseo Ahn</p> 
+    <p>05.27.2019 in monterey</p></figcaption>
+  <a href="monterey.html"></a>
+</figure>
+
+<figure class="poster-h">
+  <img src="poster/9.jpeg" alt="SanDiego"/>
+  <figcaption>
+    <h3>SanDiego</h3>
+    <p>Photo by Hongseo Ahn</p> 
+    <p>01.02.2018 in SanDiego</p></figcaption>
+  <a href="sandiego.html"></a>
+</figure>
+
+<figure class="poster-h">
+  <img src="poster/7.jpeg" alt="Universalstudio"/>
+  <figcaption>
+    <h3>Universal Studio</h3>
+    <p>Photo by Hongseo Ahn</p> 
+    <p>12.30.2017 in Universal Studio</p></figcaption>
+  <a href="universal.html"></a>
+</figure>
+
+<figure class="poster-h">
+  <img src="poster/11.jpeg" alt="lasvegas"/>
+  <figcaption>
+    <h3>LasVegas</h3>
+    <p>Photo by Hongseo Ahn</p> 
+    <p>12.27.2017 in LasVegas</p>
+  </figcaption>
+  <a href="lasvegas.html"></a>
+</figure>
+
+<figure class="poster-h">
+  <img src="poster/19.jpeg" alt="Gapyeong"/>
+  <figcaption>
+    <h3>Gapyeong</h3>
+    <p>Photo by Hongseo Ahn</p> 
+    <p>06.21.2020 in Gapyeong</p></figcaption>
+  <a href="gapyeong.html"></a>
+</figure>
+
+
+
+</div>
+
+<audio src="audio/0.mp3" autoplay>
+   
+</audio>
+
+<script>
+            
+  const ambient = () => {
+      document.getElementById('bgmusic').play();
+  }
+</script>
+</body>
+</html>
